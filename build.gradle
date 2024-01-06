@@ -5,10 +5,7 @@ plugins {
 
 version = project.mod_version
 group = project.maven_group
-
-base {
-	archivesName = project.archives_base_name
-}
+project.archivesBaseName = "${project.archives_base_name}-${project.minecraft_version}" // jar file's name when built
 
 repositories {
 }
